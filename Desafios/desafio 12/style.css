@@ -1,6 +1,106 @@
-#titulo{
-    font-family: 'P';
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format(truetype);
+    font-size: 2em;
 }
-#cordel{
-    font-family: sriracha;
+@font-face {
+    font-family: 'PassionOne';
+    src: url('fontes/PassionOne-Bold.ttf') format(truetype);
+    font-size: 1em;
+}
+:root {
+    --font-padrão: 'Sriracha', 'Arial';
+    --font-titulo: 'PassionOne', 'Arial';
+    --font-links: 'Verdana', 'Arial';
+    --cor-header: black;
+    --cor_footer: black;
+    --cor_fundo_imagem: rgba(0, 0, 0, 0.486);
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{   
+}
+
+#links{
+    font-family: var(--font-links);
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1em;
+}
+
+h1{
+    font-family: var(--font-titulo);
+    font-size: 7em;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+main{
+    min-width: 500px;
+    padding: 0px;
+}
+p{
+    font-family: var(--font-padrão);
+    font-size: 2em;
+    line-height: 2em;
+    padding: 20px;
+
+}
+.conteudo{
+    width: 450px;
+    margin: 0px;
+    padding: 20px;
+    background-color: white;
+}
+
+
+#caixa1{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 700px;
+    background-size: auto;
+    background-attachment: fixed;
+}
+#caixa2{
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 700px;
+    background-size: auto;
+    background-attachment: fixed;
+    
+}
+.conteudo_imagem{
+    background-color: var(--cor_fundo_imagem);
+    color: white;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer{
+    background-color: black;
+    height: 20px;
+}
+footer > p{
+    color: white;
+    padding: 0px;
+    
 }
