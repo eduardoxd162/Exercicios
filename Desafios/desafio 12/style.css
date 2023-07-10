@@ -35,7 +35,7 @@ body{
 
 h1{
     font-family: var(--font-titulo);
-    font-size: 7em;
+    font-size: calc(1em + 3vw);
     color: white;
     background-color: black;
     text-align: center;
@@ -57,7 +57,7 @@ main{
 }
 p{
     font-family: var(--font-padrão);
-    font-size: 2em;
+    font-size: clamp(2em, 1em + 3vw, 10vw);
     line-height: 2em;
     padding: 20px;
 
@@ -73,9 +73,9 @@ p{
 #caixa1{
     background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center center;
     min-height: 700px;
-    background-size: auto;
+    background-size: contain;
     background-attachment: fixed;
 }
 #caixa2{
