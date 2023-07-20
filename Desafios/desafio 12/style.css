@@ -75,41 +75,31 @@ section.normal{
 section.imagem{
     background-color: rgb(53, 53, 53);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637)
 }
 
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 3px 1px 0px black;
 }
 
-
-
-
-#caixa1{
+section#caixa1{
     background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 700px;
-    background-size: contain;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
 }
-#caixa2{
+section#caixa2{
     background-image: url(imagens/background002.jpg);
     background-repeat: no-repeat;
     background-position: right center;
-    min-height: 700px;
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
-    
 }
-.conteudo_imagem{
-    background-color: var(--cor_fundo_imagem);
-    color: white;
-    min-width: 350px;
-    max-width: 400px;
-    margin: 0px 0px 0px 0px;
-}
+
 
 footer{
     background-color: black;
